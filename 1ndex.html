@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Space colonization </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- центральная надпись -->
+<h1>Space colonization<br/></h1>
+
+<!--меню навигации-->
+<div class="navbar">
+
+    <!--раскрывающееся меню карты-->
+    <div class="dropdownMap">
+
+        <!--Кнопка карты-->
+        <button class="dropbtnMap">Space map
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <!--Выпадающий контент-->
+        <div class="dropdown-contentMap">
+
+            <!--Заголовок выпадающего меню-->
+            <div class="headerMap">
+                <h2>Road map <img src="mapi.png" style="max-width: 1.5%; height: 1.5%;" alt="Тут была карта"/> </h2>
+            </div>
+
+
+            <!--Выпадающий контент в виде столбцов-->
+            <div class="rowMap">
+                <div class="columnMap">
+                    <img src="map.jpg" style="max-width: 100%; height: 100%;" alt="Тут была карта"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--раскрывающееся меню карты-->
+    <div class="dropdownEngineer">
+
+        <!--Кнопка работников-->
+        <button class="dropbtnEngineer">List of engineers
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <!--Выпадающий контент-->
+        <div class="dropdown-contentEngineer">
+
+            <!--Заголовок выпадающего меню-->
+            <div class="headerEngineer">
+                <h2>Space enthusiasts <img src="au.png" style="max-width: 1.5%; height: 1.5%;" alt="Тут был космонавт"/></h2>
+            </div>
+
+            <!--Выпадающий контент в виде столбцов-->
+            <div class="rowEngineer">
+                    <div class="columnEngineer">
+                        <h3>Elon Musk</h3>
+                        <img src="Elon.png" style="max-width: 50%; height: 50%;" alt="Тут был elon"/>
+                    </div>
+
+                            <div class="columnEngineer">
+                                <h3>Do Kwon</h3>
+                                <img src="Kwon.png" style="max-width: 60%; height: 50%;" alt="Тут был квон"/>
+                            </div>
+
+                                    <div class="columnEngineer">
+                                        <h3>Matt Damon</h3>
+                                        <img src="Matt.png" style="max-width: 70%; height: 65%;" alt="Тут был мэтт"/>
+                                    </div>
+                    </div>
+            </div>
+        </div>
+
+
+
+
+    <!--раскрывающееся меню миссий-->
+    <div class="dropdownMission">
+        <button class="dropbtnMission">Active missions
+            <i class="fa fa-caret-down"></i>
+        </button>
+
+        <!--Выпадающий контент-->
+        <div class="dropdown-contentMission">
+
+
+            <!--Заголовок выпадающего меню-->
+            <div class="headerMission">
+                <h2>Solar system  <img src="solar.png" style="max-width: 2%; height: 2%;" alt="Тут была солнечная система"/> </h2>
+            </div>
+
+            <!--Выпадающий контент в виде столбцов-->
+            <div class="rowMission">
+                <div class="columnMission">
+                    <h3>Mars</h3>
+                    <img src="mars.png" style="max-width: 50%; height: 50%;" alt="Тут был марс"/>
+                </div>
+
+                <div class="columnMission">
+                    <h3>Pluto</h3>
+                    <img src="pluto.png" style="max-width: 50%; height: 50%;" alt="Тут был плутон"/>
+                </div>
+
+                <div class="columnMission">
+                    <h3>Neptune</h3>
+                    <img src="neptune.png" style="max-width: 50%; height: 50%;" alt="Тут был нептун"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Фоновая картинка-->
+
+<img src="rocket.png" style="max-width: 15%; height: 15%;" alt="ДОПОБАЧЕННЯ" class="rer", id="rer" />
+
+<div class="image">
+    <img src="xyz1.png" style="max-width: 100%; height: 100%;" alt="ДОПОБАЧЕННЯ"/>
+    <div style="padding:16px">
+</div>
+</div>
+
+<script> document.onmousemove = moveIt;
+
+function moveIt(evnt)
+{
+    if( !evnt )
+        evnt = window;
+
+    var y = evnt.clientY;
+
+    var rer = document.getElementById("rer").style;
+
+    rer.top = y + "px";
+
+    document.getElementById("y").innerHTML = y;
+
+
+} </script>
+</body>
+</html>
+
+
+
